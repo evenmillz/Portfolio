@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fur Babies</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Showcasing my favorite moments with my fur-babies,
+      including funny, touching, and memorable stories." />
+    <link href="CSS/one_page_website_old.css" rel="stylesheet" />
+    <script src="JS/one_page_website_old.js"></script>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="nav-bar">
+      <ul style="list-style-type: none">
+        <li><a href="#">Home</a></li>
+        <li class="drop">
+          <a href="#memories">Pics</a>
+          <div class="rollover-menu">
+            <a href="#funny">Fun</a>
+            <a href="#touching">Love</a>
+            <a href="#memorable">Cool</a>
+            <a href="#surprise">Video</a>
+          </div>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--HEADER-->
+    <header>
+      <div class="container" id="about">
+        <h1>Fur Baby Hall of Fame!</h1>
+        <p>
+          This is a website showcasing my favorite moments spent with my
+          fur-babies. There are funny moments, touching moments, and moments
+          that were just plain memorable to me. I like to spread joy and love in
+          the world, and this seems like a creative way to accomplish this
+          endeavor.
+        </p>
+      </div>
+    </header>
+
+    <!--FURRY IMAGES-->
+    <section>
+      <!--FUNNY-->
+      <h2>Fun</h2>
+      <div class="column">
+        <div class="images" id="funny">
+          <img
+            src="Images/funny.png"
+            onclick="openModal();currentSlide(4)"
+            class="hover-shadow"
+            alt="Dog in a kennel making a funny face."
+            tabindex="0" />
+          <img
+            src="Images/funny2.png"
+            onclick="openModal();currentSlide(2)"
+            class="hover-shadow"
+            alt="Dog and man exchange a look that appears to be an inside joke."
+            tabindex="0" />
+          <img
+            src="Images/funny3.png"
+            onclick="openModal();currentSlide(3)"
+            class="hover-shadow"
+            alt="Dog and man exchange a look that appears to be an inside joke."
+            tabindex="0" />
+          <img
+            src="Images/funny4.png"
+            onclick="openModal();currentSlide(4)"
+            class="hover-shadow"
+            alt="Dog and man exchange a look that appears to be an inside joke."
+            tabindex="0" />
+        </div>
+        <!-- FUN LIGHTHOUSE -->
+        <div id="funModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-conten">
+            <div class="mySlides">
+              <div class="numbertext">1/4</div>
+              <img
+                src="Images/funny.png"
+                onclick="openModal();currentSlide(4)"
+                class="hover-shadow"
+                alt="Dog in a kennel making a funny face."
+                tabindex="0" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2/4</div>
+              <img src="Images/funny2.png" alt="" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3/4</div>
+              <img src="Images/funny3.png" alt="" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4/4</div>
+              <img src="Images/funny4.png" alt="">
+            </div>
+
+            <!-- Next/Previous controls -->
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+             <!-- Caption Text -->
+             <div class="caption-container">
+              <p id="caption"></p>
+             </div>
+
+             <!-- Thumbnail image controls -->
+              
+          </div>
+        </div>
+        <!--TOUCHING-->
+        <h2>Love</h2>
+        <div class="images" id="touching">
+          <img
+            src="Images/touching.png"
+            onclick="openModal('loveModal');currentSlide(1, 'loveSlides')"
+            class="hover-shadow"
+            alt="Dog touching his paw to mans chest tenderly."
+            tabindex="0" />
+          <img
+            src="Images/touching2.png"
+            onclick="openModal('loveModal');currentSlide(2, 'loveSlides')"
+            class="hover-shadow"
+            alt="Dog laying back in mans arms, soaking up the love."
+            tabindex="0" />
+          <img
+            src="Images/touching3.png"
+            onclick="openModal('loveModal');currentSlide(3, 'loveSlides')"
+            class="hover-shadow"
+            alt="Dog and man exchange a look that appears to be an inside joke."
+            tabindex="0" />
+          <img
+            src="Images/touching4.png"
+            onclick="openModal('loveModal');currentSlide(4, 'loveSlides')"
+            class="hover-shadow"
+            alt="Dog and man exchange a look that appears to be an inside joke."
+            tabindex="0" />
+        </div>
+        <!--MEMORABLE-->
+        <h2>Cool</h2>
+        <div class="images" id="memorable">
+          <img
+            src="Images/memorable3.png"
+            onclick="openModal('coolModal');currentSlide(1, 'coolSlides')"
+            class="hover-shadow"
+            alt="Dog and man laughing with the same expressions!"
+            tabindex="0" />
+          <img
+            src="Images/memorable2.png"
+            onclick="openModal('coolModal');currentSlide(2, 'coolSlides')"
+            class="hover-shadow"
+            alt="Man with a stuffed unicorn taped to his head, holding a very happy dog in the middle of a store."
+            tabindex="0" />
+          <img
+            src="Images/memorable.png"
+            onclick="openModal('coolModal');currentSlide(3, 'coolSlides')"
+            class="hover-shadow"
+            alt="Dog and man exchange a look that appears to be an inside joke."
+            tabindex="0" />
+          <img
+            src="Images/memorable4.png"
+            onclick="openModal('coolModal');currentSlide(4, 'coolSlides')"
+            class="hover-shadow"
+            alt="Dog and man exchange a look that appears to be an inside joke."
+            tabindex="0" />
+        </div>
+      </div>
+    </section>
+    <!--VIDEOS-->
+    <section>
+      <!--DOG VIDEO-->
+      <h2>Video</h2>
+      <div class="media" id="surprise">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ZpeoSHJLw2Y?si=vleatdFqPy2-u8zl"
+          title="YouTube video player of surprise guests: Two kittens, named Solar and Eclipse."
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+          gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+    <!-- CONTACT FORM-->
+    <section>
+      <div class="container" id="contact">
+        <p>
+          <strong>
+            If you'd like to provide feedback about this page...reach out!
+          </strong>
+        </p>
+        <div>
+          <form>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" /><br />
+            <input type="email" placeholder="Email" /><br />
+            <input type="tel" placeholder="Phone Number" /><br />
+            <input type="checkbox" id="Calander" />
+            <label for="Calander"
+              >Would you like to recieve our furbaby calander?</label
+            ><br />
+            <textarea placeholder="Type message here..."></textarea><br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+      <p>"When life gives you lemons, hug a dog." -Even Richardson</p>
+      <table>
+        <tr>
+          <td>
+            <p>FurBaby &copy;</p>
+          </td>
+          <td>
+            <p>PO Box Tailshake Rd</p>
+            <p>Seattle, WA 98014</p>
+          </td>
+          <td>
+            <p>206-536-4554</p>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
