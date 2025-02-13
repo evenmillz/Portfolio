@@ -53,112 +53,101 @@
 
     <!--FURRY IMAGES-->
     <section>
-      <!-- The Modal/Lightbox -->
-      <div id="myModal" class="modal" style="position: sticky">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content" style="position: sticky">
-          <div class="mySlides">
-            <div class="numbertext">1 / 4</div>
-            <img src="Images/funny.png" style="width: 100%" />
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">2 / 4</div>
-            <img src="Images/funny2.png" style="width: 100%" />
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">3 / 4</div>
-            <img src="Images/funny3.png" style="width: 100%" />
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">4 / 4</div>
-            <img src="Images/funny4.png" style="width: 100%" />
-          </div>
-
-          <!-- Next/previous controls -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-          <!-- Caption text -->
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-
-          <!-- Thumbnail image controls -->
-          <div class="column">
-            <img
-              class="demo"
-              src="Images/funny.png"
-              onclick="currentSlide(1)"
-              alt="Nature" />
-          </div>
-
-          <div class="column">
-            <img
-              class="demo"
-              src="Images/funny2.png"
-              onclick="currentSlide(2)"
-              alt="Snow" />
-          </div>
-
-          <div class="column">
-            <img
-              class="demo"
-              src="Images/funny3.png"
-              onclick="currentSlide(3)"
-              alt="Mountains" />
-          </div>
-
-          <div class="column">
-            <img
-              class="demo"
-              src="Images/funny4.png"
-              onclick="currentSlide(4)"
-              alt="Lights" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Images used to open the lightbox -->
-    <section>
       <div class="container">
-        <div class="column" class="images">
-          <img
-            src="Images/funny.png"
-            onclick="openModal();currentSlide(1)"
-            class="hover-shadow"
-            alt="Dog in a kennel making a funny face." />
+        <!-- The Modal/Lightbox -->
+        <!-- Button trigger modal -->
+        <!-- <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#exampleModalCenter">
+          Launch demo modal
+        </button> -->
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="funModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="funModalTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                  Fun Images
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- Carousel -->
+                ...
+              </div>
+              <div class="modal-footer">...</div>
+            </div>
+          </div>
         </div>
-        <div class="column" class="images">
-          <img
-            src="Images/funny2.png"
-            onclick="openModal();currentSlide(2)"
-            class="hover-shadow"
-            alt="" />
-        </div>
-        <div class="column" class="images">
-          <img
-            src="Images/funny3.png"
-            onclick="openModal();currentSlide(3)"
-            class="hover-shadow"
-            alt="" />
-        </div>
-        <div class="column" class="images">
-          <img
-            src="Images/funny4.png"
-            onclick="openModal();currentSlide(4)"
-            class="hover-shadow"
-            alt="" />
+
+        <!-- Images used to open the lightbox -->
+
+        <div class="container column">
+          <div class="row">
+            <div class="col">
+              <img
+                src="Images/imgs-lg/funny.png"
+                onclick="openModal();currentSlide(1)"
+                class="hover-shadow img-fluid"
+                alt="Dog in a kennel making a funny face."
+                data-toggle="modal"
+                data-target="#funModal" />
+            </div>
+            <div class="col">
+              <img
+                src="Images/imgs-lg/funny2.png"
+                onclick="openModal();currentSlide(2)"
+                class="hover-shadow img-fluid"
+                alt=""
+                data-toggle="modal"
+                data-target="#funModal" />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col">
+              <img
+                src="Images/imgs-lg/funny3.png"
+                onclick="openModal();currentSlide(3)"
+                class="hover-shadow img-fluid"
+                alt=""
+                data-toggle="modal"
+                data-target="#funModal" />
+            </div>
+            <div class="col">
+              <img
+                src="Images/imgs-lg/funny4.png"
+                onclick="openModal();currentSlide(4)"
+                class="hover-shadow img-fluid"
+                alt=""
+                data-toggle="modal"
+                data-target="#funModal" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
     <!--VIDEOS-->
     <section>
       <!--DOG VIDEO-->
       <h2>Video</h2>
-      <div class="media" id="surprise">
+      <div class="container media" id="surprise">
         <iframe
           width="560"
           height="315"
@@ -173,7 +162,7 @@
     </section>
     <!-- CONTACT FORM-->
     <section>
-      <div class="container" id="contact">
+      <div id="contact">
         <p>
           <strong>
             If you'd like to provide feedback about this page...reach out!
@@ -195,6 +184,7 @@
         </div>
       </div>
     </section>
+
     <!--FOOTER-->
     <footer>
       <p>"When life gives you lemons, hug a dog." -Even Richardson</p>
