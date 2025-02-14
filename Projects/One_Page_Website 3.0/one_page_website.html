@@ -11,19 +11,22 @@
   </head>
   <body>
     <!--NAVBAR-->
-    <nav>
+    <div id="home"></div>
+    <nav class="nav-bar">
       <ul style="list-style-type: none">
-        <li><a href="#funny">Funny Moments</a></li>
-        <li><a href="#touching">Touching Moments</a></li>
-        <li><a href="#memorable">Memorable Moments</a></li>
-        <li><a href="#surprise">Suprise Appearance!</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#pics">Pics</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
     <!--HEADER-->
-    <header>
+    <header class="container" id="about">
       <div>
         <h1>Fur Baby Hall of Fame!</h1>
+        <h4><u>About</u></h4>
         <p>
           This is a webpage showcasing pictures moments of my fur-babies. I like
           to spread joy and love in the world, and this seems like a creative
@@ -33,7 +36,7 @@
     </header>
 
     <!-- FURRY IMAGES-->
-    <section>
+    <section class="container" id="pics">
       <h3>Enjoy!</h3>
       <!--FUNNY-->
       <div id="row">
@@ -47,7 +50,7 @@
 
         <div class="column">
           <img
-            src="Images/Squared/love1.png"
+            src="Images/Squared/fun2.png"
             onclick="openModal();currentSlide(2)"
             class="hover-shadow"
             alt="Dog and man exchange a look that appears to be an inside joke." />
@@ -55,7 +58,7 @@
 
         <div class="column">
           <img
-            src="Images/Squared/cool4.png"
+            src="Images/Squared/fun3.png"
             onclick="openModal();currentSlide(3)"
             class="hover-shadow"
             alt="Dog in a very awkward and relaxing pose." />
@@ -63,7 +66,7 @@
 
         <div class="column">
           <img
-            src="Images/Squared/love4.png"
+            src="Images/Squared/fun4.png"
             onclick="openModal();currentSlide(4)"
             class="hover-shadow"
             alt="Another dog in a very uncomfortable looking comfortable position." />
@@ -81,17 +84,17 @@
 
           <div class="dogSlides">
             <div class="numbertext">2/4</div>
-            <img src="Images/Modal/love1_popup.png" style="width: 100%" />
+            <img src="Images/Modal/fun2_popup.png" style="width: 100%" />
           </div>
 
           <div class="dogSlides">
             <div class="numbertext">3/4</div>
-            <img src="Images/Modal/cool4_popup.png" style="width: 100%" />
+            <img src="Images/Modal/fun3_popup.png" style="width: 100%" />
           </div>
 
           <div class="dogSlides">
             <div class="numbertext">4/4</div>
-            <img src="Images/Modal/love4_popup.png" style="width: 100%" />
+            <img src="Images/Modal/fun4_popup.png" style="width: 100%" />
           </div>
 
           <!-- Next/Prev Controls -->
@@ -115,7 +118,7 @@
           <div class="column">
             <img
               class="demo"
-              src="Images/Thumbnail/love1_thumb.png"
+              src="Images/Thumbnail/fun2_thumb.png"
               onclick="currentSlide(2)"
               alt="Inside Joke" />
           </div>
@@ -123,7 +126,7 @@
           <div class="column">
             <img
               class="demo"
-              src="Images/Thumbnail/cool4_thumb.png"
+              src="Images/Thumbnail/fun3_thumb.png"
               onclick="currentSlide(3)"
               alt="Comfy Dog!" />
           </div>
@@ -131,7 +134,7 @@
           <div class="column">
             <img
               class="demo"
-              src="Images/Thumbnail/love4_thumb.png"
+              src="Images/Thumbnail/fun4_thumb.png"
               onclick="currentSlide(4)"
               alt="Just Relaxing" />
           </div>
@@ -139,10 +142,10 @@
       </div>
     </section>
     <!--VIDEOS-->
-    <section>
+    <section class="container" id="video">
       <!--DOG VIDEO-->
       <div>
-        <h2>Suprise Appearance!</h2>
+        <h2>Surprise Appearance!</h2>
         <iframe
           id="media"
           src="https://www.youtube.com/embed/ZpeoSHJLw2Y?si=vleatdFqPy2-u8zl"
@@ -155,30 +158,50 @@
       </div>
     </section>
     <!--FORM-->
-    <section>
+    <section class="container" id="contact">
       <div>
         <h3>
           If you'd like to provide feedback about this page<br />
           reach out.
         </h3>
         <div>
-          <form>
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" /><br />
-            <input type="email" placeholder="Email" /><br />
-            <input type="tel" placeholder="Phone Number" /><br />
-            <input type="checkbox" id="Calander" />
+          <form id="formInfo" action="your-backend-script.php" method="post">
+            <input
+              type="text"
+              placeholder="First Name"
+              name="firstName"
+              required />
+            <input
+              type="text"
+              placeholder="Last Name"
+              name="lastName"
+              required /><br />
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              required /><br />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              name="phoneNumber"
+              required /><br />
+            <input type="checkbox" id="Calander" name="calendar" />
             <label for="Calander"
-              >Would you like to recieve our furbaby calander?</label
+              >Would you like to receive our furbaby calendar?</label
             ><br />
-            <textarea placeholder="Type message here..."></textarea><br />
+            <textarea
+              placeholder="Type message here..."
+              name="message"
+              required></textarea
+            ><br />
             <input type="submit" value="Submit" />
           </form>
         </div>
       </div>
     </section>
     <!--FOOTER-->
-    <footer>
+    <footer id="toeJam">
       <p>"When life gives you lemons, hug a dog." -Even Richardson</p>
       <table>
         <tr>
