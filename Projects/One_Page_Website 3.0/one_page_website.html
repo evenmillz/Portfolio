@@ -10,20 +10,6 @@
     <link href="CSS/one_page_website.css" rel="stylesheet" />
   </head>
   <body>
-    <!--HEADER-->
-    <header>
-      <div>
-        <h1>Fur Baby Hall of Fame!</h1>
-        <p>
-          This is a website showcasing my favorite moments spent with my
-          fur-babies. There are funny moments, touching moments, and moments
-          that were just plain memorable to me. I like to spread joy and love in
-          the world, and this seems like a creative way to accomplish this
-          endeavor.
-        </p>
-      </div>
-    </header>
-
     <!--NAVBAR-->
     <nav>
       <ul style="list-style-type: none">
@@ -34,112 +20,131 @@
       </ul>
     </nav>
 
-    <!--FURRY IMAGES-->
-    <section>
+    <!--HEADER-->
+    <header>
       <div>
-        <h2>Try Not to Laugh 😆</h2>
+        <h1>Fur Baby Hall of Fame!</h1>
+        <p>
+          This is a webpage showcasing pictures moments of my fur-babies. I like
+          to spread joy and love in the world, and this seems like a creative
+          way to accomplish this endeavor.
+        </p>
       </div>
+    </header>
+
+    <!-- FURRY IMAGES-->
+    <section>
+      <h3>Enjoy!</h3>
       <!--FUNNY-->
-      <div id="funny">
-        <h3>Funny</h3>
-        <img
-          src="Images/Funny.png"
-          width="600"
-          height="500"
-          alt="Dog in a kennel making a funny face."
-          tabindex="0" />
-        <img
-          src="Images/funny2.png"
-          width="400"
-          height="500"
-          alt="Dog and man exchange a look that appears to be an inside joke."
-          tabindex="0" />
-        <img
-          src="Images/funny3.png"
-          width="450"
-          height="500"
-          alt="Dog in a very awkward and relaxing pose."
-          tabindex="0" />
-        <img
-          src="Images/funny4.png"
-          width="500"
-          height="500"
-          alt="Another dog in a very uncomfortable looking comfortable position."
-          tabindex="0" />
-        <img
-          src="Images/funny5.png"
-          width="600"
-          height="500"
-          alt="Exacerbated dog face."
-          tabindex="0" />
+      <div id="row">
+        <div class="column">
+          <img
+            src="Images/Squared/fun1.png"
+            onclick="openModal();currentSlide(1)"
+            class="hover-shadow"
+            alt="Dog in a kennel making a funny face." />
+        </div>
+
+        <div class="column">
+          <img
+            src="Images/Squared/love1.png"
+            onclick="openModal();currentSlide(2)"
+            class="hover-shadow"
+            alt="Dog and man exchange a look that appears to be an inside joke." />
+        </div>
+
+        <div class="column">
+          <img
+            src="Images/Squared/cool4.png"
+            onclick="openModal();currentSlide(3)"
+            class="hover-shadow"
+            alt="Dog in a very awkward and relaxing pose." />
+        </div>
+
+        <div class="column">
+          <img
+            src="Images/Squared/love4.png"
+            onclick="openModal();currentSlide(4)"
+            class="hover-shadow"
+            alt="Another dog in a very uncomfortable looking comfortable position." />
+        </div>
       </div>
-      <!--TOUCHING-->
-      <div id="touching">
-        <h2>Try Not to CRY 😭</h2>
-        <h3>Touching</h3>
-        <img
-          src="Images/Touching.png"
-          width="350"
-          height="500"
-          alt="Dog touching his paw to mans chest tenderly."
-          tabindex="0" />
-        <img
-          src="Images/touching2.png"
-          width="600"
-          height="500"
-          alt="Dog loving a chest rub, looking tenderly at man."
-          tabindex="0" />
-        <img
-          src="Images/touching3.png"
-          width="600"
-          height="500"
-          alt="Dog looks like he's healing man with a touch."
-          tabindex="0" />
-        <img
-          src="Images/touching4.png"
-          width="450"
-          height="500"
-          alt="Small dog being held, looking very relaxed."
-          tabindex="0" />
-      </div>
-      <!--MEMORABLE-->
-      <div id="memorable">
-        <h2>Unforgettable 🤯</h2>
-        <h3>Memorable</h3>
-        <img
-          src="Images/Memorable.png"
-          width="450"
-          height="500"
-          alt="Dog posing like the king of the jungle...lion dog!"
-          tabindex="0" />
-        <img
-          src="Images/memorable2.png"
-          width="450"
-          height="550"
-          alt="Man with a stuffed unicorn taped to his head, holding a very happy dog in the middle of a store."
-          tabindex="0" />
-        <img
-          src="Images/memorable3.png"
-          width="500"
-          height="550"
-          alt="Dog and man laughing, with the same expression and exuberance."
-          tabindex="0" />
-        <img
-          src="Images/memorable4.png"
-          width="550"
-          height="500"
-          alt="Two dogs looking cute, sitting next to each other, with a visible bond."
-          tabindex="0" />
+
+      <!-- OPEN MODAL LIGHTBOX -->
+      <div id="dogModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="dogSlides">
+            <div class="numbertext">1/4</div>
+            <img src="Images/Modal/fun1_popup.png" style="width: 100%" />
+          </div>
+
+          <div class="dogSlides">
+            <div class="numbertext">2/4</div>
+            <img src="Images/Modal/love1_popup.png" style="width: 100%" />
+          </div>
+
+          <div class="dogSlides">
+            <div class="numbertext">3/4</div>
+            <img src="Images/Modal/cool4_popup.png" style="width: 100%" />
+          </div>
+
+          <div class="dogSlides">
+            <div class="numbertext">4/4</div>
+            <img src="Images/Modal/love4_popup.png" style="width: 100%" />
+          </div>
+
+          <!-- Next/Prev Controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption Text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img
+              class="demo"
+              src="Images/Thumbnail/fun1_thumb.png"
+              onclick="currentSlide(1)"
+              alt="Free Stax!" />
+          </div>
+
+          <div class="column">
+            <img
+              class="demo"
+              src="Images/Thumbnail/love1_thumb.png"
+              onclick="currentSlide(2)"
+              alt="Inside Joke" />
+          </div>
+
+          <div class="column">
+            <img
+              class="demo"
+              src="Images/Thumbnail/cool4_thumb.png"
+              onclick="currentSlide(3)"
+              alt="Comfy Dog!" />
+          </div>
+
+          <div class="column">
+            <img
+              class="demo"
+              src="Images/Thumbnail/love4_thumb.png"
+              onclick="currentSlide(4)"
+              alt="Just Relaxing" />
+          </div>
+        </div>
       </div>
     </section>
     <!--VIDEOS-->
     <section>
       <!--DOG VIDEO-->
-      <div id="surprise">
+      <div>
         <h2>Suprise Appearance!</h2>
         <iframe
-          width="560"
-          height="315"
+          id="media"
           src="https://www.youtube.com/embed/ZpeoSHJLw2Y?si=vleatdFqPy2-u8zl"
           title="YouTube video player of surprise guests: Two kittens, named Solar and Eclipse."
           frameborder="0"
@@ -190,5 +195,6 @@
         </tr>
       </table>
     </footer>
+    <script src="JS/one_page_website.js"></script>
   </body>
 </html>

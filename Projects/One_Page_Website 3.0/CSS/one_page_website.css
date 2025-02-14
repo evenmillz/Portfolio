@@ -16,3 +16,13 @@ input {
     border-radius: 5px;
 
 }
+
+img {
+    height: 500px;
+    width: 500px;
+}
+
+#media {
+    height: 500px;
+    width: 750px;
+}
