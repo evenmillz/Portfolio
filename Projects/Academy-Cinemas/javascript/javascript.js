@@ -58,3 +58,34 @@ function buyTickets() {
     // This calls the function to show the message
     displaySelectedMovieOptions();
 }
+
+// JQUERY
+
+// Shrinks header size when the document is scrolled down by 80 pixels
+$(document).on("scroll", function() {
+
+    // When the webpage is scrolled down from the top by 50px this
+    // if statement will trigger
+    if ($(document).scrollTop() > 50) {
+
+    // Once the 50px requirement has been met add the
+    // nav-shrink class selector to the same HTML element
+    // that has the nav class
+    $("nav").addClass("nav-shrink");
+
+    // Adjust the position of the mobile drop menu
+    // to accommodate the new hieght decrease
+    $("div.navbar-collapse").css("margin-top", "-6px");
+    } else {
+
+    // If the webpage has not been scrolled down or
+    // is back at the top of the nav-shrink class selector
+    // is removed from the HTML element with the nav
+    // class selector
+    $("nav").removeClass("nav-shrink");
+
+    // The margin for the drop down menu is now
+    // returned to it's original amount
+    $("div.navbar-collapse").css("margin-top", "14px");
+    }
+});

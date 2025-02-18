@@ -1,10 +1,10 @@
-/*Font Passion One from fonts.google.com*/
+/* Font Passion One from fonts.google.com */
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-/*Font Yesteryear from fonts.google.com*/
+/* Font Yesteryear from fonts.google.com */
 @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
-/*Creates global CSS variables that can be reused
-throughout the file*/
+/* Creates global CSS variables that can be reused
+throughout the file */
 :root{
     --main-color: rgb(126, 133, 130);
     --main-color-accent: rgb(237, 192, 3);
@@ -28,12 +28,23 @@ body{
     overflow-x: hidden; /*Removes left to right scroll bar*/
 }
 
-/*NAVBAR*/
+/* NAVBAR */
 
 .navbar{
     background-color: var(--secondary-color);
     border-bottom: 5px solid rgb(98, 0, 0);
     height: 100px;
+}
+
+/* SHRINK ON SCROLL NAVBAR */
+.nav-shrink {
+    height: 80px;
+    transition: .5s ease;
+}
+
+/* Adds a transition to the movie drop down menu on shrink and scroll */
+.navbar-collapse {
+    transition: margin-top 0.5s ease;
 }
 
 /*Affects the title in the navebar Academy Cinemas*/
