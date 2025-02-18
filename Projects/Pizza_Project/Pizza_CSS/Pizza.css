@@ -1,0 +1,75 @@
+/* Body Styling */
+body {
+    background-color: rgb(251, 223, 15);
+  }
+  
+  /* h1 Styling */
+  h1 {
+    font-family: fantasy;
+    color: rgb(154, 8, 8);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* div Styling */
+  div {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+    color: crimson;
+  }
+  
+  /* h3 Styling */
+  h3 {
+    font-family: monospace;
+    color: rgb(154, 8, 8);
+  }
+  
+  /* Menu Styling */
+  #menuBG {
+    width: 800px; 
+    height: 470;
+    margin: 10px auto;
+  }
+  
+  .row {
+    display: flex; 
+  }
+  
+  .column {
+    flex: 1; 
+    padding: 10px; 
+  }
+  
+  #btnOrder {
+    margin: 10px 0px 0px 350px; 
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    color: rgb(154, 8, 8);
+    background-color: gold;
+  }
+  
+  #cart {
+    top: 0;
+    margin: 0px auto;
+    width: 800px; 
+    height: 200px;
+    text-align: center;
+  }
+  
+  #showText {
+    width: 400px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+  }
+  
+  #totalPrice {
+    width: 400px;
+    height: 190px;
+    margin: 0px auto;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
