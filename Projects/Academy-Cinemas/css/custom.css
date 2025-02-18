@@ -370,3 +370,18 @@ other images on the page and overides the img type selector styling*/
     font-size: 22px;
     margin: 5px 0;
   }
+
+  /* POPOVERS */
+
+.star-rating {
+    width: 80%;
+}
+
+/* TOAST */
+.custom-toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
