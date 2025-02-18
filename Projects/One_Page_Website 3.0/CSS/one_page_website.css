@@ -1,6 +1,22 @@
 /*Import link for the Poppins font from fonts.google.com*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* Makes the entire page start as invisible */
+body {
+    opacity: 0;
+    animation: ghostDogs 1.5s ease-in-out forwards;
+}
+
+/* This applies KeyFrames for a smooth fade-in */
+@keyframes ghostDogs {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /*General Style*/
 html{font-family: "Poppins", serif;
 font-size: 25px;
