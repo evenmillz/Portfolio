@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Grace Hopper Dedication</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/grace.css" />
   </head>
 
   <body>
@@ -175,10 +175,34 @@
           inclusive tech community.
         </p>
         <p>
-          For mor details, Visit
+          For more details, Visit
           <a href="https://ghc.anitab.org" target="_blank">GHC 2025</a>
         </p>
       </div>
     </div>
+
+    <!-- Contact Form Button -->
+    <button id="openPopup">Contact With Feedback!</button>
+
+    <!-- Popup Contact Form -->
+    <div id="popupForm" class="popupContact">
+      <div class="creator-popup">
+        <span id="closePopupForm" class="close">&times;</span>
+        <h2>Contact the Creator!</h2>
+        <form id="creatorForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="JS/grace.js"></script>
   </body>
 </html>

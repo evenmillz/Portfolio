@@ -1,99 +1,55 @@
 /* Body Styling */
 body {
-  background-color: #FAF3DD; 
-}
-
-/* h1 Styling */
-h1 {
-  font-family: fantasy;
-  color: #8B0000;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* h2 Styling */
-h2 {
-  text-align: center;
-  color: #8B0000; 
-  font-family: monospace;
-}
-
-/* h3 Styling */
-h3 {
-  font-family: monospace;
-  color: #8B0000; 
-}
-
-/* div Styling */
-div {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 
-  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
-  'Helvetica Neue', sans-serif;
-  color: #5A3E36; 
-}
+    background-color: rgb(251, 223, 15);
+  }
   
+  /* h1 Styling */
+  h1 {
+    font-family: fantasy;
+    color: rgb(154, 8, 8);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* div Styling */
+  div {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+    color: crimson;
+  }
+  
+  /* h3 Styling */
+  h3 {
+    font-family: monospace;
+    color: rgb(154, 8, 8);
+  }
   
   /* Menu Styling */
-
-  /* Added to align the checkboxes and the labels properly */
-.column label {
-  display: flex;
-  align-items: center;
-  /* adds space between checkboxes and the text */
-  gap: 8px; 
-  font-size: 16px;
-}
-
-/* makes the size of the checkboxes and the radio buttons uniform with the text */
-input[type="checkbox"],
-input[type="radio"] {
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-}
-
-/* makes sure the columns align their content properly */
-.row {
-  display: flex;
-  /* makes the items align at the top */
-  align-items: flex-start; 
-  /* makes sure there is space between the columns */
-  gap: 20px; 
-}
-
-/* defines each of the column's properties */
-.column {
-  flex: 1; 
-  padding: 10px; 
-}
-
-/* styles the background of the main menu */
   #menuBG {
     width: 800px; 
     height: 470;
     margin: 10px auto;
   }
   
-
-  /* styles the order button  */
+  .row {
+    display: flex; 
+  }
+  
+  .column {
+    flex: 1; 
+    padding: 10px; 
+  }
+  
   #btnOrder {
     margin: 10px 0px 0px 350px; 
     width: 100px;
     height: 40px;
     font-weight: bold;
-    color: #FAF3DD;
-    background-color: #D4A017;
-    border: none;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
+    color: rgb(154, 8, 8);
+    background-color: gold;
   }
-
-  /* Adds a hover effect */
-  #btnOrder:hover {
-    background-color: #B8860B;
-  }
-
-  /* styles the cart */
+  
   #cart {
     top: 0;
     margin: 0px auto;
@@ -101,7 +57,6 @@ input[type="radio"] {
     height: 200px;
     text-align: center;
   }
-  
   
   #showText {
     width: 400px;
@@ -118,92 +73,3 @@ input[type="radio"] {
     vertical-align: top;
   }
   
-  /* Pizza Contact Form CSS */
-input {
-  width: 100%;
-  margin: 8px 0;
-  border: 2px solid #8B0000;
-  border-radius: 5px;
-  background-color: #FFF8E1;;
-}
-
-
-#contact {
-  display: block;
-  margin-bottom: 10px;
-}
-
-form {
-  display: table;
-  padding: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-form input {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 15px;
-  color: rgb(217, 8, 8);
-  border: 2px solid rgb(154, 8, 8);
-  border-radius: 5px;
-  padding: 3px;
-  margin: 10px 15px 10px 0px;
-  transition: 0.3s ease-out, color 0.3s ease-out; 
-
-}
-
-form input:focus {
-  border: 2px solid #B8860B;
-  color: black;
-  outline: none;
-  transition: 0.3s ease-out, color 0.3s ease-out;
-
-}
-
-label{
-  font-family: monospace; 
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px;
-  color: #5A3E36;
-}
-
-textarea{
-  width: 100%;
-  height: 200px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  resize: both; 
-  border: 3px solid #8B0000;
-  border-radius: 5px;
-  font-family: 'Courier New', Courier, monospace;
-  color: #5A3E36;
-  font-size: 15px;
-  transition: 0.3s ease-out; 
-  outline: none;
-  color: black;
-  background-color: #FFF8E1;
-}
-
-textarea:focus {
-  border: 2px solid #B22222;
-  outline: none;
-  transition: 0.3s ease-out, color 0.3s ease-out;
-
-}
-
-/* Submit Button */
-input[type="submit"] {
-  background-color: #D4A017;
-  font-weight: bold;
-  font-size: medium;
-  color: #FAF3DD; /* Light text */
-  border: none;
-  padding: 8px;
-  cursor: pointer;
-  transition: 0.3s background ease-in-out;
-}
-
-input[type="submit"]:hover{
-  background-color: #B8860B;
-}
