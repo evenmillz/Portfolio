@@ -1,3 +1,56 @@
+// Automatic slideshow
+document.addEventListener("DOMContentLoaded", function () {
+    let slides = document.querySelectorAll("#furslide > div");
+    let currentIndex = 0;
+    let totalSlides = slides.length;
+
+    // Ensure all slides have transition applied beforehand
+    slides.forEach((slide, index) => {
+        // First slide is visible
+        slide.style.opacity = index === 0 ? "1" : "0"; 
+        slide.style.display = index === 0 ? "block" : "none";
+        // Keeps the images stacked
+        slide.style.position = "absolute"; 
+        // Sets the transition globally
+        slide.style.transition = "opacity 1s ease-in-out"; 
+    });
+
+    let slideInterval = setInterval(function () {
+        // Fades out the current slide
+        slides[currentIndex].style.opacity = "1";
+
+        setTimeout(() => {
+            // Hides after fade-out
+            slides[currentIndex].style.display = ""; 
+
+            // Moves to the next slide
+            currentIndex++;
+
+            // Check if it's the last slide
+            if (currentIndex >= totalSlides) {
+                // Stops the slideshow
+                clearInterval(slideInterval); 
+                // Keeps last slide visible
+                slides[totalSlides - 1].style.display = "block"; 
+                // Ensures it's fully visible
+                slides[totalSlides - 1].style.opacity = "1"; 
+                return;
+            }
+
+            // Shows the next slide
+            slides[currentIndex].style.display = "block";
+            
+            // Shortens the delay before fading in
+            setTimeout(() => {
+                // Fades in
+                slides[currentIndex].style.opacity = "1"; 
+            }, 50);
+            // Waits for fade-out transition
+        }, 1000); 
+        // Changees slide every 3 seconds
+    }, 3000); 
+});
+
 // This function opens the Modal
 function openModal() {
     document.getElementById("dogModal").style.display = "block";
