@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pizza Drill Demo</title>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="Pizza_JavaScript/Pizza.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css" />
+  </head>
+  <body>
+    <div id="menuBG">
+      <h1 style="margin: 0 0px 0 20px">Pizza Madness!</h1>
+      <input
+        id="btnOrder"
+        type="button"
+        onclick="getReceipt()"
+        value="Place Order" />
+      <form id="frmMenu">
+        <div class="row">
+          <div class="column left">
+            <h3>Size:</h3>
+            <label
+              ><input
+                class="size"
+                type="radio"
+                name="Size"
+                value="Personal Pizza" />
+              Personal Pizza</label
+            ><br />
+            <label
+              ><input
+                class="size"
+                type="radio"
+                name="Size"
+                value="Medium Pizza" />
+              Medium Pizza</label
+            ><br />
+            <label
+              ><input
+                class="size"
+                type="radio"
+                name="Size"
+                value="Large Pizza"
+                checked />
+              Large Pizza</label
+            ><br />
+            <label
+              ><input
+                class="size"
+                type="radio"
+                name="Size"
+                value="Extra Large Pizza" />
+              Extra Large Pizza</label
+            ><br />
+            <label
+              ><input
+                class="size"
+                type="radio"
+                name="Size"
+                value="Mammoth Pizza" />
+              Mammoth Pizza</label
+            ><br />
+          </div>
+          <div class="column center">
+            <h3>Meats:</h3>
+            <label
+              ><input
+                class="toppings"
+                type="checkbox"
+                name="Topping"
+                value="Pepperoni" />
+              Pepperoni</label
+            ><br />
+            <label
+              ><input
+                class="toppings"
+                type="checkbox"
+                name="Topping"
+                value="Sausage" />
+              Sausage</label
+            ><br />
+            <label
+              ><input
+                class="toppings"
+                type="checkbox"
+                name="Topping"
+                value="Canadian Bacon" />
+              Canadian Bacon</label
+            ><br />
+            <label
+              ><input
+                class="toppings"
+                type="checkbox"
+                name="Topping"
+                value="Chicken" />
+              Chicken</label
+            ><br />
+            <label
+              ><input
+                class="toppings"
+                type="checkbox"
+                name="Topping"
+                value="Ox Tails" />
+              Ox Tails</label
+            ><br />
+          </div>
+          <div class="column right">
+            <h3>Vegetables:</h3>
+            <label
+              ><input
+                class="toppings"
+                type="checkbox"
+                name="Topping"
+                value="Mushrooms" />
+              Mushrooms</label
+            ><br />
+            <label
+              ><input
+                class="toppings"
+                type="checkbox"
+                name="Topping"
+                value="Onions" />
+              Onions</label
+            ><br />
+            <label
+              ><input
+                class="toppings"
+                type="checkbox"
+                name="Topping"
+                value="Bell Peppers" />
+              Bell Peppers</label
+            ><br />
+            <label
+              ><input
+                class="toppings"
+                type="checkbox"
+                name="Topping"
+                value="Pineapples" />
+              Pineapples</label
+            ><br />
+            <label
+              ><input
+                class="toppings"
+                type="checkbox"
+                name="Topping"
+                value="Olives" />
+              Olives</label
+            ><br />
+          </div>
+        </div>
+        <div id="cart">
+          <div id="showText"></div>
+          <div id="totalPrice"></div>
+        </div>
+      </form>
+    </div>
+    <!-- PIZZA FORM! -->
+    <div>
+      <h2>Tell us how we did!</h2>
+      <div>
+        <form name="pizzaForm" onsubmit="return validatePizzaForm()">
+          <input type="text" placeholder="First Name" name="firstName" />
+          <input type="text" placeholder="Last Name" name="lastName" /><br />
+          <input type="email" placeholder="Email" name="email" /><br />
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            name="phoneNumber" /><br />
+
+          <textarea placeholder="Type message here..." name="message"></textarea
+          ><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
