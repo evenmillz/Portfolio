@@ -5,10 +5,23 @@
 /*Import link for the Mukta font from fonts.google.com*/
 @import url('https://fonts.googleapis.com/css2?family=Mukta&family=Roboto&display=swap');
 
+@keyframes petPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 body{
     background-color: white;
     overflow-x: hidden; /*Hides the bottom left right scroll bar
     when the elements stretch beyond the screen border*/
+    animation: petPulse  3s forwards ease-in-out;
 }
 
 /*NAVBAR*/ 
@@ -211,7 +224,7 @@ footer{
     web browser screen edge on the left and right*/
     margin-right: -10px;
     margin-left: -10px;
-    bottom 0; /*Positions the footer on the bottom of
+    bottom: 0; /*Positions the footer on the bottom of
     the screen*/
 }
 
