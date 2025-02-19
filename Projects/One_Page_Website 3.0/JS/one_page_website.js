@@ -1,12 +1,14 @@
-// Automatic slideshow
+// Automatic slideshow listens for the page to load
+
+// Initializes everything and sets up the starting point to begin
 document.addEventListener("DOMContentLoaded", function () {
     let slides = document.querySelectorAll("#furslide > div");
     let currentIndex = 0;
     let totalSlides = slides.length;
 
-    // Ensure all slides have transition applied beforehand
+    // Ensures all slides have transition applied beforehand
     slides.forEach((slide, index) => {
-        // First slide is visible
+        // This makes the first slide visible
         slide.style.opacity = index === 0 ? "1" : "0"; 
         slide.style.display = index === 0 ? "block" : "none";
         // Keeps the images stacked
@@ -26,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Moves to the next slide
             currentIndex++;
 
-            // Check if it's the last slide
+            // Checks if it's the last slide
             if (currentIndex >= totalSlides) {
                 // Stops the slideshow
                 clearInterval(slideInterval); 

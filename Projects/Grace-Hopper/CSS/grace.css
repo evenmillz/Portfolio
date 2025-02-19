@@ -72,19 +72,6 @@ img {
     padding: 78px;
 }
 
-/* Contact With FeedBack Button */
-#openPopup {
-    background-color: #0642f6;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-}
 
 /* Button Styling */
 .creator-popup button {
@@ -180,21 +167,22 @@ img {
 }
 
 /* This is the application of the animation above for the contact button */
+/* Contact With FeedBack Button */
 #openPopup {
-    background-color: #0642f6;
+    background-color: rgba(6, 66, 246, 0.7);
     color: white;
     border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
+    padding: 8px 12px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bold;
     transition: 0.3s ease-in-out;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
+    position: fixed;
+    top: 100px;
+    right: 20px;
     z-index: 1100;
-
-    /* This applies the animation */
-animation: pulse 1.5s infinite ease-in-out;
+    animation: pulse 1.5s infinite ease-in-out;
 }
 
