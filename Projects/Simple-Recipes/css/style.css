@@ -10,6 +10,7 @@ html{
     of negative margin values*/
     scroll-behavior: smooth; /*Creates a smooth scrolling
     effect when a bookmark link is clicked*/
+    scroll-behavior: smooth;
 }
 
 /*NAVBAR*/

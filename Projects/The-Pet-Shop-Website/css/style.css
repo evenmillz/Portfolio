@@ -16,6 +16,9 @@
         transform: scale(1);
     }
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: white;

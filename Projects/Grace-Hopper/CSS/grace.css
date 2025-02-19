@@ -1,6 +1,7 @@
 /* Set font-family for whole document */
 html {
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .content-container{
@@ -108,6 +109,13 @@ img {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Shows the popup form smooth */
+.popupContact.show {
+    opacity: 1;
 }
 
 /* Contact Form Box */
@@ -183,6 +191,8 @@ img {
     font-weight: bold;
     transition: 0.3s ease-in-out;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1100;
 
     /* This applies the animation */
 animation: pulse 1.5s infinite ease-in-out;
