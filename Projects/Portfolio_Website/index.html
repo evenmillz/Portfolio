@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Even Richardson</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="CSS/current_stylesheet.css" />
+
     <link rel="icon" href="Images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="Images/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="Images/apple-touch-icon.png" />
@@ -16,15 +18,13 @@
     <!--NAVBAR-->
     <div class="Navbar">
       <a class="active" href="#Home">Home</a>
+      <a href="#Slideshow">Slideshow</a>
       <a href="#About">About</a>
       <a href="#GitHub">GitHub</a>
-      <a href="#Contact">Contact</a>
+      <a onclick="openForm()" ondblclick="closeForm()" class="contact"
+        >Contact</a
+      >
     </div>
-
-    <!--Breaks inserted to add space between navbar and
-the first heading-->
-    <br />
-    <br />
 
     <!--Background video-->
     <div id="Home">
@@ -42,52 +42,133 @@ the first heading-->
 
     <!--Video text-->
     <div class="Video_Text">
-      <h1 class="white-text">Even's Portfolio</h1>
+      <h1 class="white-text">Code. Solve. Elevate.</h1>
       <strong>
         <p class="center">
+          Welcome to my digital space- <br />
+          Reach out if something sparks your interest!
+          <br />
+          <br />
+          <br />
           <q>
-            My journey is about breaking generational cycles and showing<br />
-            that no matter where you come from, you can create a purposeful
-            life.<br />No obstacle, no limitation, no circumstance, however
-            daunting, <br />
-            can ever stand in the way of someone who is determined to rise
-            and<br />
-            inspire others.
+            Success isn’t just about skill, it’s about maintaining a
+            solutions-driven mindset, and the ability to turn challenges into
+            opportunities to evolve.
           </q>
           <br />
           -Even R.
-          <br />
-          <br />
-          My name is Even Wyne Richardson. Welcome to my portfolio website.<br />
-          Here, I’ll share my background and experience.
-          <br />
-          <br />Thank you for visiting, and I hope you enjoy exploring!
         </p>
       </strong>
+    </div>
+
+    <!-- Slideshow Section -->
+    <div id="Slideshow">
+      <div id="Slideshow_Background">
+        <div id="Slideshow_Container">
+          <!-- Slide 1 of 6 -->
+          <div class="mySlides fade">
+            <img
+              class="Slideshow_Images"
+              src="Images/Evenwyne.png"
+              alt="Dramatized picture of the webpage creator in a suit in front of a backdrop of a futuristic landscape. 
+              visonary, innovative, trendsetting, hardworking, and dressed to a tee." />
+            <div class="text">Even Richardson: Problem-solver-Innovator</div>
+          </div>
+          <!-- Slide 2 of 6 -->
+          <div class="mySlides fade">
+            <img
+              class="Slideshow_Images"
+              src="Images/JavaScript.png"
+              alt="Futuristic black and gold, custom JS logo, generated through prompt engineering." />
+            <div class="text">Empowering Innovation with JavaScript</div>
+          </div>
+          <!-- Slide 3 of 6 -->
+          <div class="mySlides fade">
+            <img
+              class="Slideshow_Images"
+              src="Images/Python.png"
+              alt="Custom, 3D Python logo, simple yet elegant, no lettering." />
+            <div class="text">
+              Transforming Ideas into Intelligent Solutions
+            </div>
+          </div>
+          <!-- Slide 4 of 6 -->
+          <div class="mySlides fade">
+            <img
+              class="Slideshow_Images"
+              src="Images/NoSQL.png"
+              alt="Custom NoSQL logo centered on a computer chip, 
+            shellacked-powder blue and the same color curcuits running up and down outward on top
+             and bottom of it, with red curcuits underneath it" />
+            <div class="text">
+              Building Scalable, Flexible, & Future-Ready Databases
+            </div>
+          </div>
+          <!-- Slide 5 of 6 -->
+          <div class="mySlides fade">
+            <img
+              class="Slideshow_Images"
+              src="Images/React.png"
+              alt="Futuristic black and blue custom React logo, with a subtle 'refact' written on the wall in the background" />
+            <div class="text">
+              Crafting Seamless User Interfaces for Dynamic Web Experiences
+            </div>
+          </div>
+          <!-- Slide 6 of 6 -->
+          <div class="mySlides fade">
+            <img
+              class="Slideshow_Images"
+              src="Images/MongoDB.png"
+              alt="Custom, elegant MongoDB logo, fading shellacked-poweder blue built on a cuircuit, with components lit up, and 
+              some not, slightly resembling 'The Tree of Life" />
+            <div class="text">Powering Agile Data Solutions</div>
+          </div>
+          <!-- Previous and Next Buttons -->
+          <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <!-- Adds a space between the slideshow images and the dots -->
+
+        <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+      </div>
     </div>
 
     <!--About section-->
     <div class="Row" id="About">
       <!--Left column-->
       <div class="Column_2">
-        <img src="Images/AI_Logo.png" alt="Personal AI logo generated by AI" />
+        <img
+          src="Images/AI.png"
+          alt="A sleek, futuristic AI logo shaped like an octagon, symbolizing balance and adaptability. The metallic design features intricate circuitry patterns, resembling neural connections, converging toward the bold, central letters ‘AI.’ Electric blue light surges illuminate key points, representing intelligence, innovation, and breakthrough moments in artificial intelligence. The brushed metal texture conveys strength and endurance, emphasizing AI’s ever-evolving presence in technology and society. -->
+          " />
       </div>
       <!--Right Column-->
       <div class="Column_1">
         <h1>About</h1>
         <p>
-          First-generation tech student, working in a field that excites me! I
+          <br />First-generation tech student, recent graduate trained in
+          full-stack AI development and data science tools, skilled in python,
+          neural networks, machine learning, data visualization, and popular
+          libraries like TensorFlow, PyTorch, Pandas, and more. <br />
+
+          <!-- <a href="https://www.learncodinganywhere.com" target="_blank"
+            >[The Tech Academy]</a
+          > -->
+          <br />
+          Speacialized in breaking barriers, challenging limitations, and
+          proving innovation thrives where determination meets opportunity. I
           believe in technology’s ability to foster innovation, collaboration,
           and impactful change.
-          <br />
-          <br />I am a graduate of
-          <a href="https://www.learncodinganywhere.com" target="_blank"
-            >The Tech Academy</a
-          >’s Artificial Intelligence Boot Camp, trained and experienced in
-          full-stack AI development and data science tools. Skilled in Python,
-          neural networks, machine learning, data visualization, and popular
-          libraries like TensorFlow, PyTorch, Pandas, and more.
-          <a href="#Contact">Contact</a> me below!
+          <a onclick="openForm()" class="contact">Contact</a> me below!
         </p>
       </div>
     </div>
@@ -98,69 +179,58 @@ the first heading-->
       <div class="Column_1">
         <h1>GitHub</h1>
         <p>
-          You can view my coding projects on my GitHub profile here:
+          Coding is a journey, and this is a snapshot of mine.
           <br />
         </p>
 
         <p class="center">
           <a href="https://github.com/evenmillz" target="_blank"
-            >Even Richardson's GitHub</a
+            >My GitHub Portfolio</a
           >
         </p>
       </div>
       <!--Right Column-->
       <div class="Column_2">
         <a href="https://github.com/evenmillz" target="_blank"
-          ><img src="Images/GitHub.png" alt="GitHub Logo"
+          ><img src="Images/GitHub-Logo.png" alt="GitHub Logo"
         /></a>
       </div>
     </div>
 
-    <!--Contact section-->
-    <div class="Row" id="Contact">
-      <!--Contact image, left column-->
-      <div class="Column_2 Column_tall">
-        <img
-          src="Images/Logo.png"
-          alt="Personal professional logo of Even Richardson" />
-      </div>
-      <!--Contact form, right column-->
-      <div class="Column_1 Column_tall">
-        <h1>Contact</h1>
-        <!--This specifies where and how to send the form data;
-        it is being left blank-->
-        <form action="https://formspree.io/f/xjkkeayp" method="POST">
-          <label>Name:</label>
+    <!-- Contact Form -->
+    <div id="Contact">
+      <button onclick="openForm()" class="Pop_Up_Button">REACH OUT</button>
+      <div class="form-popup" id="myForm">
+        <form
+          action="https://formspree.io/f/xjkkeayp"
+          method="POST"
+          class="form-container">
+          <h1>Let’s Build Together</h1>
+          <label for="name"><b>Name</b></label>
           <input
             type="text"
-            id="Name"
-            name="Name"
-            placeholder="Please enter your name here" />
-          <label>Email:</label>
-          <input
-            type="text"
-            id="Email"
-            name="Email"
-            placeholder="Please enter your email here" />
-          <label>Message:</label>
-          <input
-            type="text"
-            id="Message"
-            name="Message"
-            placeholder="Please write your message here" />
-          <input type="submit" value="SUBMIT" />
+            placeholder="Introduce Yourself"
+            name="name"
+            required />
+          <label for="phone"><b>Phone</b></label>
+          <input type="text" placeholder="Your Phone Number" name="phone" />
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Your Email" name="email" required />
+          <label for="message"><b>Message</b></label>
+          <input type="text" placeholder="Open Dialogue" name="message" />
+
+          <button type="submit" class="btn">SEND</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            EXIT
+          </button>
         </form>
       </div>
     </div>
-    <!--Footer section-->
+
+    <!-- Footer section -->
     <footer>
-      <p class="center">
-        &copy;Even Richardson
-        <a href="https://www.linkedin.com/in/wiseinvestment/" target="_blank"
-          >LinkedIn</a
-        >
-        <br />
-      </p>
+      <p class="center">&copy Even Richardson</p>
     </footer>
+    <script src="JS/main.js"></script>
   </body>
 </html>
