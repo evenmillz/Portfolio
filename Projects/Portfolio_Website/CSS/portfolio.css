@@ -161,6 +161,9 @@ img {
 
     /* Centers images */
     margin: auto auto auto auto; 
+
+    /* Works in conjunction with the hover effect to enlarge image slightly upon hover */
+    transition: transform 1s ease-in-out;
 }
 
 /* Hover effect for images */
@@ -168,6 +171,9 @@ img:hover {
 
     /* Restores most of the image’s color when hovered */
     filter: grayscale(5%); 
+
+    /* Enlarges the image when hovering over it */
+    transform: scale(1.1)
 }
 
 /* Styling for the footer */
